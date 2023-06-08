@@ -1,0 +1,122 @@
+:root {
+    --cor-primaria: #CBB9AB;    
+    --cor-secundaria: #856349;
+    --cor-texto: #1d0d00;       
+    --cor-efeitos: #888C7B; 
+    --cor-classica: #f8e9de; 
+  }
+  @font-face {
+    font-family: primaria;
+    src: url(/Cinzel-Regular.otf);
+  }
+  
+body{
+    margin: 0;
+    padding: 0;
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: rgb(29,13,0);
+background: linear-gradient(0deg, rgba(29,13,0,1) 0%, rgba(133,99,73,1) 100%);
+}
+nav{
+    width: 80%;
+    height: 10vh;
+    background-color: var(--cor-secundaria);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    padding: 0 5%;
+}
+.logo{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo-imagem{
+width: 40%;
+height: 100%;
+background-image: url(/imagens-cafeteria/logo-png.png);
+background-size: cover;
+background-position: 5px;
+}
+.logo-name{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-texto);
+    font-size: 14px;
+    font-family:'primaria','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.caixa-pesquisa{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pesquisa-caixa-geral{
+    width: 70%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 15px;
+    background-color: var(--cor-classica);
+}
+.pesquisa{
+    width: 80%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    outline: none;
+}
+.pesquisa-caixa-geral img{
+    filter: invert(5%) sepia(40%) saturate(6194%) hue-rotate(43deg) brightness(101%) contrast(106%);
+}
+.icones{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.amei{
+    width: 40px;
+    height: 40px;
+    margin-left: 10%;
+}
+.amei img{
+    filter: invert(5%) sepia(40%) saturate(6194%) hue-rotate(43deg) brightness(101%) contrast(106%);
+}
+.carinho{
+    width: 40px;
+    height: 40px;
+    margin-left: 10%;
+}
+.carinho{
+    filter: invert(5%) sepia(40%) saturate(6194%) hue-rotate(43deg) brightness(101%) contrast(106%);
+}
+.navbar-links{
+    width: 40px;
+    height: 40px;
+    margin-left: 10%;
+    justify-content: center;
+}
+.line{
+    width: 30px;
+    background-color: var(--cor-texto);
+    height: 3px;
+    margin-bottom: 10px;
+    margin-left: 15%;
+    margin-top: 15%;
+}
