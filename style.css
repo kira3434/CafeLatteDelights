@@ -13,14 +13,14 @@
 body{
     margin: 0;
     padding: 0;
+
 }
-#home{
+#barra-inicial{
     width: 100%;
-    height: 100vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
-    background: rgb(29,13,0);
-background: linear-gradient(0deg, rgba(29,13,0,1) 0%, rgba(133,99,73,1) 100%);
+    background-color: var(--cor-secundaria);
 }
 nav{
     width: 80%;
@@ -103,7 +103,7 @@ background-position: 5px;
     height: 40px;
     margin-left: 10%;
 }
-.carinho{
+.carinho img{
     filter: invert(5%) sepia(40%) saturate(6194%) hue-rotate(43deg) brightness(101%) contrast(106%);
 }
 .navbar-links{
@@ -112,11 +112,59 @@ background-position: 5px;
     margin-left: 10%;
     justify-content: center;
 }
-.line{
-    width: 30px;
-    background-color: var(--cor-texto);
-    height: 3px;
-    margin-bottom: 10px;
-    margin-left: 15%;
-    margin-top: 15%;
+.navbar-links img{
+    filter: invert(5%) sepia(40%) saturate(6194%) hue-rotate(43deg) brightness(101%) contrast(106%);
+}
+
+#home{
+    width: 80%;
+    padding: 0 10%;
+    height: 90vh;
+    background: rgb(29,13,0);
+background: linear-gradient(0deg, rgba(29,13,0,1) 0%, rgba(133,99,73,1) 100%);
+position: relative;
+}
+.name-barra-lateral{
+    font-family:'primaria','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: var(--cor-texto);
+}
+hr{
+  height: 1px;
+   background-color: var(--cor-texto);
+}
+.links-lateral{
+  position: absolute;
+  right: 0;
+    width: 20%;
+    height: 100%;
+  background-color: var(--cor-primaria);
+}
+.links-lateral  li a{
+    font-size: 20px;
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-family:'primaria','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px 20px;
+  transition: 1.0s;
+}
+.links-lateral li a:hover{
+    background-color: var(--cor-secundaria);
+}
+.links-lateral li{
+    margin-top: 10px;
+    margin-bottom: 70px;
+    list-style: none;
+}
+.caixa-imagem-lateral{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+.imagem-lateral{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--cor-efeitos);
 }
