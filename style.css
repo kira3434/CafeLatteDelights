@@ -13,6 +13,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: var(--cor-primaria);
 
 }
 #barra-inicial{
@@ -20,7 +21,7 @@ body{
     height: 10vh;
     display: flex;
     justify-content: center;
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
 }
 nav{
     width: 80%;
@@ -30,7 +31,7 @@ nav{
     justify-content: space-between;
     position: fixed;
     align-items: center;
-    padding: 0 5%;
+    padding: 0 10%;
 }
 .logo{
     width: 30%;
@@ -41,7 +42,7 @@ nav{
 .logo-imagem{
 width: 40%;
 height: 100%;
-background-image: url(/imagens-cafeteria/logo-png.png);
+background-image: url(imagens-cafeteria/logo-png.png);
 background-size: cover;
 background-position: 5px;
 }
@@ -106,11 +107,12 @@ background-position: 5px;
 .carinho img{
     filter: invert(5%) sepia(40%) saturate(6194%) hue-rotate(43deg) brightness(101%) contrast(106%);
 }
-.navbar-links{
+.navbar-icon{
     width: 40px;
     height: 40px;
     margin-left: 10%;
     justify-content: center;
+    cursor: pointer;
 }
 .navbar-links img{
     filter: invert(5%) sepia(40%) saturate(6194%) hue-rotate(43deg) brightness(101%) contrast(106%);
@@ -120,9 +122,6 @@ background-position: 5px;
     width: 80%;
     padding: 0 10%;
     height: 90vh;
-    background: rgb(29,13,0);
-background: linear-gradient(0deg, rgba(29,13,0,1) 0%, rgba(133,99,73,1) 100%);
-position: relative;
 }
 .name-barra-lateral{
     font-family:'primaria','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -134,11 +133,12 @@ hr{
    background-color: var(--cor-texto);
 }
 .links-lateral{
-  position: absolute;
+  position: fixed;
   right: 0;
     width: 20%;
     height: 100%;
   background-color: var(--cor-primaria);
+  z-index: 1;
 }
 .links-lateral  li a{
     font-size: 20px;
@@ -168,3 +168,76 @@ hr{
     border-radius: 50%;
     background-color: var(--cor-efeitos);
 }
+.caixa-de-icones{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+.icones-lateral{
+    margin-top: 15px;
+    margin-left: 10%;
+    margin-right: 3%;
+}
+.icones-lateral img{
+    filter: invert(5%) sepia(40%) saturate(6194%) hue-rotate(43deg) brightness(101%) contrast(106%);
+}
+.hidden {
+    display: none;
+
+  }
+  .active{
+    display: block;
+    opacity: 1;
+  }
+
+
+
+  .caixa-inicial{
+    width: 100%;
+    height: 95%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  }
+  .texto-inicio{
+    height: 100%;
+    width: 60%;
+  }
+  .titulo-inicio{
+    width: 100%;
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-family:'primaria','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 25%;
+  }
+  .mascote{
+    z-index: 0;
+  }
+  .paragrafo-inicio{
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    color: var(--cor-efeitos);
+    margin-bottom: 5%;
+  }
+  .button-inicio{
+    width: 100%;
+    text-align: center;
+  }
+  .button-inicio a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 70px;
+    background-color: var(--cor-texto);
+    color: var(--cor-secundaria);
+    border-radius: 15px;
+    font-family:'primaria','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1.0s;
+  }
+  .button-inicio a:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    
+  }
+ 
