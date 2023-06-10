@@ -35,17 +35,17 @@
                 <div class="carinho">
                     <img src="imagens-cafeteria/shopping-cart.png" width="40 px" height="40px" alt="">
                 </div>
-
-
-                <div class="navbar-links">
-                    <img src="/imagens-cafeteria/menu.png" width="40px" height="40px" alt="">
+                <div class="navbar-icon">
+                    <div class="navbar-links" onclick="toggleLinksLateral(this)">
+                        <img id="navbar-img" src="imagens-cafeteria/menu.png" width="40px" height="40px" alt="Imagem 1">
+                    </div>
                 </div>
             </div>
         </nav>
     </div>
 
     <div id="home">
-        <div class="links-lateral">
+        <div class="links-lateral hidden">
             <div class="name-barra-lateral">
                 <h2>
                     Café Latte Delights
@@ -61,10 +61,38 @@
                 </ul>
             </div>
             <div class="caixa-imagem-lateral">
-                <div class="imagem-lateral"><img src="imagens-cafeteria/logo-em-preto-e-branco.png" width="150px" alt=""></div>
+                <div class="imagem-lateral"><img src="imagens-cafeteria/logo-em-preto-e-branco.png" width="150px"
+                        alt=""></div>
+            </div>
+            <div class="caixa-de-icones">
+                <div class="icones-lateral"><a href="#"><img src="imagens-cafeteria/instagram.png" width="40px"
+                            alt=""></a></div>
+                <div class="icones-lateral"><a href="#"><img src="imagens-cafeteria/facebook.png" width="40px"
+                            alt=""></a></div>
+                <div class="icones-lateral"><a href="#"><img src="imagens-cafeteria/twitter.png" width="40px"
+                            alt=""></a></div>
             </div>
         </div>
-        <script src="script.js"></script>
+        <div class="caixa-inicial">
+            <div class="texto-inicio">
+                <div class="titulo-inicio">
+                    <h1>Bem-vindo à Café Latte Delights!</h1>
+                </div>
+                <div class="paragrafo-inicio">
+                    <p>Delicie-se com os sabores requintados de cafés <br> recém-preparados e delícias encantadoras. <br> Junte-se
+                        a nós para uma experiência <br> inesquecível que vai tentar o seu paladar e <br> aquecer a sua alma.</p>
+                </div>
+                <div class="button-inicio">
+                    <a href="shop">Explorar Nosso Cardápio</a>
+                </div>
+            </div>
+            <div class="mascote">
+                <img src="imagens-cafeteria/mascote-com-fundo.png" width="550px" alt="">
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
 
 </body>
 
